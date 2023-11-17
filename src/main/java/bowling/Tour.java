@@ -47,17 +47,6 @@ public class Tour {
 	public void addScore(int nbQuilles, Lancer lancer) {
 		lancer.setNbQuilles(nbQuilles);
 	}
-
-	public int getNbQuilles() {
-		int score = 0;
-		if (lancer1.getNbQuilles() != -1) {
-			score += lancer1.getNbQuilles();
-		}
-		if (lancer2.getNbQuilles() != -1) {
-			score += lancer2.getNbQuilles();
-		}
-		return score;
-	}
 	public int getScoreQuilleLancer(Lancer l) {
 		return l.getNbQuilles();
 	}
@@ -79,7 +68,6 @@ public class Tour {
 	public Lancer getLancer1() {
 		return lancer1;
 	}
-
 	public Lancer getLancer2() {
 		return lancer2;
 		}
